@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Log in</title>
+    <style>
+        body {
+            background-color: azure;
+        }
+
+        .mainbox {
+            border: 1px solid black;
+            background-color: #eee8e883;
+            text-align: center;
+            margin-left: 400px;
+            margin-top: 150px;
+            padding: 20px;
+            width: 40%;
+        }
+
+        .uname {
+            padding: 0px;
+            font-size: 25px;
+            margin: 15px;
+        }
+
+        input[type=text],
+        input[type=password] {
+            font-size: 15px;
+            border-radius: 15px;
+            width: 50%;
+            height: 30px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .uname ::placeholder {
+            font-size: 14px;
+            padding-left: 10px;
+        }
+
+        .rem {
+            margin: 3px;
+            padding: 0px;
+            font-size: 15px;
+        }
+
+        #forgotpass {
+            text-align: right;
+            margin-left: 8%;
+        }
+
+        #forgotpass:hover {
+            color: #0206fa;
+        }
+
+
+        .login {
+            padding: 0px;
+            font-size: 25px;
+            margin: 15px;
+        }
+
+        button {
+            border-radius: 20px;
+            width: 22%;
+            height: 35px;
+            background-color: #2aafec;
+            border: 1px solid gray;
+            color: white;
+        }
+
+        button:hover {
+            background-color: #0589c7;
+        }
+
+        .signup a {
+            font-size: 13px;
+        }
+
+        a:hover {
+            color: #0206fa;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+   
+        <div class="mainbox">
+            <form>
+                <h1>Login</h1>
+                <div class="uname">
+                    <input type="text" id="username" name="username" placeholder="Email or Phone number" required>
+                </div>
+
+                <div class="uname">
+                    <input type="password" id="pwd" name="pwd" placeholder="Password" required>
+                </div>
+
+                <div class="rem">
+
+                    <input type="checkbox" name="remeber" id="remember">
+                    <label for="remember"> Remember me</label>
+
+                    <a href="#" id="forgotpass">forgot password</a>
+                </div>
+
+                <div class="login1">
+                    <button type="submit" class="login"> Login</button>
+                </div>
+
+                <div class="signup">
+                    <p>Don't have account? <a id="sign" href="#">SingUp</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+</body>
+
+</html>
